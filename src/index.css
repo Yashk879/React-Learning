@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 30px;
+  background-color: #f3f4f6;
+  font-family: Arial, sans-serif;
+}
+
+.Card {
+  width: 320px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.top-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.top-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.company-title span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.company-title h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #111827;
+}
+
+.company-title p {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.job-role {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  padding: 6px 10px;
+  font-size: 12px;
+  color: #2563eb;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+}
+
+.Salary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.location {
+  font-size: 12px;
+  font-weight: 400;
+  color: #6b7280;
+  text-align: right;
+}
+
+.apply {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 14px;
+}
+
+.apply button {
+  width: 100%;
+  padding: 11px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.apply button:hover {
+  background-color: #1d4ed8;
+}
