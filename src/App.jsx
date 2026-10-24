@@ -28,7 +28,7 @@
   
 // export default App
 
-//Working with funtions
+// Working with funtions
 // import React from 'react'
 
 // const App = () => {
@@ -50,3 +50,27 @@
 // }
 
 // export default App
+import React from 'react'
+import { useState } from 'react'
+
+const App = () => {
+  const [Num,setNum]=useState(20);
+  const [Name,setName]=useState("Yash")
+  function changeNumber(){
+    setNum(39)
+  }
+  function changeNAME(){
+    setName("KUMAR")
+  }
+  return (
+    <div>
+      <h1>This is the current number {Num}</h1>
+      <br />
+      <h2 onClick={changeNAME}>My Name is {Name}</h2>
+      <br />
+      <button onClick={changeNumber}>Click Me</button>
+    </div>
+  )
+}
+
+export default App

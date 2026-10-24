@@ -3,8 +3,8 @@
   padding: 30px;
   background-color: #f3f4f6;
   font-family: Arial, sans-serif;
-}
-
+} */
+/* 
 .Card {
   width: 320px;
   padding: 20px;
@@ -109,10 +109,12 @@
   background-color: #1d4ed8;
 } */
 
-/* body{
+body{
   margin: 20px;
   padding: 20px;
-} */
+  background-color: rgb(60, 58, 58);
+
+}
 div{
    margin: 20px;
   padding: 20px;
