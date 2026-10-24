@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.form {
+  width: 50%;
+  padding: 30px;
+  border-right: 2px solid #777;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form h1,
+.notes h1 {
+  margin-top: 10px;
+  margin-bottom: 24px;
+  font-size: 36px;
+}
+
+.title,
+.details {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 16px 20px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.title {
+  height: 46px;
+}
+
+.details {
+  height: 132px;
+  resize: vertical;
+}
+
+.details::placeholder,
+.title::placeholder {
+  color: #888;
+  font-weight: bold;
+}
+
+.submit {
+  width: 100%;
+  height: 42px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.submit:hover {
+  transform: scale(1.03);
+}
+
+.notes {
+  width: 50%;
+  padding: 30px 40px;
+  min-width: 0;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+  padding: 0 8px 10px 0;
+  color: black;
+  align-items: start;
+}
+
+.note-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.note-card {
+  width: 100%;
+  min-height: 215px;
+  background-color: rgb(116, 103, 103);
+  border-radius: 14px;
+  text-align: center;
+  padding: 15px;
+  overflow-wrap: anywhere;
+}
+
+.note-card h2,
+.note-card p {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.delete {
+  width: 130px;
+  min-height: 30px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0;
+  transition: transform 0.2s ease;
+}
+
+.delete:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1000px) {
+  .notes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .form,
+  .notes {
+    width: 100%;
+  }
+
+  .form {
+    border-right: none;
+    border-bottom: 2px solid #777;
+  }
+
+  .notes-grid {
+    max-height: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .notes-grid {
+    grid-template-columns: 1fr;
+  }
+}
