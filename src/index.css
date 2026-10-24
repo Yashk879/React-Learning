@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   padding: 30px;
   background-color: #f3f4f6;
@@ -107,4 +107,13 @@ body {
 
 .apply button:hover {
   background-color: #1d4ed8;
+} */
+
+/* body{
+  margin: 20px;
+  padding: 20px;
+} */
+div{
+   margin: 20px;
+  padding: 20px;
 }
